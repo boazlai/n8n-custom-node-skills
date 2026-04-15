@@ -1,0 +1,28 @@
+{
+  "name": "n8n-custom-node",
+  "version": "1.0.2",
+  "description": "Install the n8n custom community node skill into your coding agent (Copilot, Claude, Cursor, etc.)",
+  "keywords": [
+    "n8n",
+    "n8n-nodes",
+    "skill",
+    "copilot",
+    "claude",
+    "cursor"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@clack/prompts": "^1.2.0"
+  },
+  "bin": {
+    "n8n-custom-node": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
