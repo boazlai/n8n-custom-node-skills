@@ -131,6 +131,7 @@ If the user wants to publish the package or copy it to another workspace:
 - Mixing `Main` outputs with AI-tool-only behavior.
 - Baking repo-specific examples into the reusable template.
 - Publishing a package whose README does not explain credentials or compatibility.
+- Assuming the node picker merges action and trigger entries by icon or category. n8n merges them by node name: the trigger node must be a separate trigger-type node whose `name` is exactly the action node `name` plus `Trigger` (for example `myService` and `myServiceTrigger`). The icon does not control merging. For clean trigger actions in the picker, keep the trigger node `displayName` ending in `Trigger` and model trigger selection with a trigger-style field such as `Trigger On` / `event` / `events` instead of overloading an action-style `operation` field.
 
 ---
 
